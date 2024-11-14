@@ -15,6 +15,7 @@ public class mainFrame extends javax.swing.JFrame {
      */
     public mainFrame() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -34,9 +35,19 @@ public class mainFrame extends javax.swing.JFrame {
 
         jButton1.setText("Booking");
         jButton1.setName("btnBooking"); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Registrasi");
         jButton2.setName("btnRegistrasi"); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("BOOKING JASA MAKEUP");
         jLabel1.setName("label1"); // NOI18N
@@ -49,28 +60,38 @@ public class mainFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(44, 44, 44)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(86, 86, 86)
+                        .addGap(99, 99, 99)
                         .addComponent(jLabel1)))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel1)
-                .addGap(29, 29, 29)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        new booking().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new register().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

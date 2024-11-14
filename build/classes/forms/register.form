@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="41" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jLabel4" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fEmail" min="-2" pref="305" max="-2" attributes="0"/>
+                          <Component id="fNoHp" min="-2" pref="305" max="-2" attributes="0"/>
+                          <Component id="fIdCustomer" min="-2" pref="305" max="-2" attributes="0"/>
+                          <Component id="fNamaCustomer" min="-2" pref="305" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                      <Component id="btnSimpan" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="btnUbah" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                      <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="62" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fIdCustomer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fNamaCustomer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fNoHp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSimpan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnUbah" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="51" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID Customer"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fIdCustomer">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama Customer"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fNamaCustomer">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fNamaCustomerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="No Hp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fNoHp">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fNoHpActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fEmail">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSimpan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SIMPAN"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSimpanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnUbah">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="UBAH"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUbahActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnHapus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="HAPUS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHapusActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

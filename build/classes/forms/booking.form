@@ -23,13 +23,166 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblIdBooking" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTglBooking" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNamaPaket" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNamaCustomer" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTotalHarga" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="fNamaPaket" max="32767" attributes="0"/>
+                  <Component id="fNamaCustomer" max="32767" attributes="0"/>
+                  <Component id="fTglBooking" alignment="0" max="32767" attributes="0"/>
+                  <Component id="fTotalHarga" pref="336" max="32767" attributes="0"/>
+                  <Component id="fIdBooking" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace pref="117" max="32767" attributes="0"/>
+              <Component id="btnSimpan" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="btnUbah" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Component id="btnHapus" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblIdBooking" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fIdBooking" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fNamaCustomer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNamaCustomer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fNamaPaket" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNamaPaket" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fTglBooking" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTglBooking" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fTotalHarga" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTotalHarga" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSimpan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnUbah" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnHapus" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="58" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblIdBooking">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID_Booking"/>
+        <Property name="name" type="java.lang.String" value="lblIdBooking" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fIdBooking">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fIdBooking" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fIdBookingActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fNamaCustomer">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fNamaCustomer" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fNamaPaket">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fNamaPaket" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fNamaPaketActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fTglBooking">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fTglBooking" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fTglBookingActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fTotalHarga">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fTotalHarga" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNamaCustomer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama_Customer"/>
+        <Property name="name" type="java.lang.String" value="lblNamaCustomer" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNamaPaket">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama_Paket"/>
+        <Property name="name" type="java.lang.String" value="lblNamaPaket" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTglBooking">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tgl_Booking"/>
+        <Property name="name" type="java.lang.String" value="lblTglBooking" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTotalHarga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total_Harga"/>
+        <Property name="name" type="java.lang.String" value="lblTotalHarga" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSimpan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SIMPAN"/>
+        <Property name="name" type="java.lang.String" value="btnSimpan" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSimpanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnUbah">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="UBAH"/>
+        <Property name="name" type="java.lang.String" value="btnUbah" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUbahActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnHapus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="HAPUS"/>
+        <Property name="name" type="java.lang.String" value="btnHapus" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHapusActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
 </Form>

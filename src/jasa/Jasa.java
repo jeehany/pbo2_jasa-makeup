@@ -4,6 +4,8 @@
  */
 package jasa;
 
+import forms.mainFrame;
+
 /**
  *
  * @author USER
@@ -14,7 +16,7 @@ public class Jasa {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new mainFrame().setVisible(true);
     }
     
 }
